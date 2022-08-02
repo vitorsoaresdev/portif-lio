@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3726a4766.js" crossorigin="anonymous"></script>
+    <title>Portifólio Responsivo</title>
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+
+            <nav>
+                <img src="" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">Sobre mim</a></li>
+
+                    <li><a href="#portfolio">Portifólio</a></li>
+
+                    <li><a href="#contact">Contato</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <p>Front End Developer</p>
+
+                <h1><span>V</span>ítor Soares</h1>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre mim</h1>
+
+                    <p>Meu nome é Vítor Soares e sou um apaixonado por tecnologia. Meu primeiro contato com programação foi em 2014, quando tive a oportunidade de estudar em uma escola especializada em tecnologia. Apesar de ter gostado da área, só comecei a dar o devido foco em 2021, quando comecei a estudar por conta própria através de diversos cursos que mantenho até os dias atuais, tendo em mente que estamos sempre em constante aprendizado.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        
+                        <p class="tab-links" onclick="opentab('experience')">Experiência</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                            <li><i class="fa-brands fa-css3"></i> CSS3</li>
+                            <li><i class="fa-brands fa-square-js"></i> Javascript</li>
+                            <li><i class="fa-brands fa-react"></i> React</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Loading!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfólio</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png">
+
+                    <div class="layer">
+                        <h3>Pokemom Website</h3>
+                        <p>Site pokemon usando API rest</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png">
+
+                    <div class="layer">
+                        <h3>Tela de login LOL</h3>
+                        <p>Tela inicial de login do usuário</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png">
+
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Aplicativo de verificação do tempo usando React</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contato</h1>
+                    <p><i class="fa-regular fa-envelope"></i> dev.vitors@gmail.com</p>
+                    <div class="social-icons">
+
+                        <a href="https://www.linkedin.com/in/v%C3%ADtor-soares-435602240/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+                        <a href="https://github.com/vitorsoaresdev" target="_blank"<i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Baixar CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder="Nome" required>
+
+                        <input type="text" name="Email" placeholder="Email" required>
+
+                        <textarea name="Message" rows="6" placeholder="Mensagem"></textarea>
+
+                        <button class="btn btn2" type="submit">Enviar</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Desenvolvido por Vítor S</p>
+    </footer>
+
+    <script src="Main.js"></script>
+</body>
+</html>
